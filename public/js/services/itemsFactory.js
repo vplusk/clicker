@@ -28,6 +28,7 @@
                 // .catch(function(response){
                 //   deferred.reject(response);
                 // });
+                // ERROR in directive: cannot read 'then' of undefined 
                 return $http({ 
                     method: "GET", 
                     url: 'http://clicker/public/items'

@@ -16,7 +16,7 @@
             link: itemsFunction
         }
 
-        function itemsFunction(scope) {
+        function itemsFunction($scope) {
             itemsFactory.get().then(function(data) {
                 $scope.items = data;
                 console.log($scope.items);
@@ -34,7 +34,8 @@
                         //console.log(itemData);
                         itemsFactory.store(itemData)
                             .then(function(data) {
-                                console.log("item added");
+                                //console.log("item added");
+                                location.reload();
                             });
                     }
             };

@@ -1,9 +1,10 @@
-<h1>hello!</h1>
-
-<input type="text" ng-model="itemText" name="text" ng-keypress="addItem($event)">
+<input type="text" ng-model="itemText" name="text" ng-keypress="addItem($event)" placeholder="Enter item text and press Enter!">
 <br>
 
-<a href="" id="button">Button</a>
-<ul>
-	<li ng-repeat="item in items">Item {{ item.id }} {{ item.text }}</li>
+<a href="" id="button" ng-click="ddSwitch = ddSwitch ? false:true">Button</a>
+<ul ng-show="ddSwitch">
+	<li ng-repeat="item in items">
+		<b>Item {{ item.id }} </b>
+		{{ item.text }}
+	</li>
 </ul>
