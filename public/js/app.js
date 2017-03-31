@@ -1,0 +1,1 @@
+var clickerApp = angular.module('clickerApp', []); 
