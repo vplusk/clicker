@@ -39,6 +39,16 @@
                             });
                     }
             };
+
+            $scope.deleteItem = function(id) {
+                itemsFactory.delete(id)
+                    .then(function(data) {
+                        $scope.items = data;                        
+                        console.log("Items was deleted");
+                        location.reload();
+                    });
+
+            }
         }
     }
 })();

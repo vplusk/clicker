@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('/items/{id?}', 'ItemsController@index');
 Route::post('/items', 'ItemsController@store');
+Route::delete('/items/{id?}', 'ItemsController@delete');

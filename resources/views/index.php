@@ -6,13 +6,14 @@
 
 	<!-- CSS -->
 	
-	<link rel="stylesheet" href="css/app.css"> 	
+	<link rel="stylesheet" href="css/app.css">
 
-	<!-- ANGULAR -->	
+	<!-- ANGULAR -->
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script> <!-- load angular -->
-
 	
-	<script src="js/app.js"></script> 
+	<script src="js/app.js"></script>
+	<script src="js/click.js"></script>
+	
 	
 	<script src="js/controllers/MainController.js"></script> 
 	<script src="js/services/itemsFactory.js"></script>
@@ -24,5 +25,6 @@
 	<div class="wrap">
 		<items-data></items-data>
 	</div>
+	
 </body>
 </html>

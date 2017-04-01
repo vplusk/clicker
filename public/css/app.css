@@ -28,9 +28,11 @@ input {
     text-decoration: none;
     border-radius: 50px;
 }
+
 items-data {
     position: relative;
 }
+
 ul {
     list-style: none;
     width: 200px;
@@ -39,6 +41,10 @@ ul {
     padding: 10px;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
+    display: none;
+}
+ul.list-is-open {
+    display: block;
 }
 ul:before {
     content: "";
@@ -72,3 +78,11 @@ ul li:hover {
 @keyframes fadeIn {
     from { opacity: 0; }
       to { opacity: 1; }
+      
+
+
+
+    
+    
+   
+    

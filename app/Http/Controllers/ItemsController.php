@@ -42,4 +42,18 @@ class ItemsController extends Controller {
         $item->text = $request->input('text');
         $item->save();
     }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function delete(Request $request)
+    {
+        
+        $item = Item::find($request->id);
+        $item->delete();
+        
+    }
 }

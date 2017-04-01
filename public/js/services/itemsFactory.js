@@ -51,6 +51,21 @@
                     deferred.reject(response);
                 });
                 return deferred.promise;
+            },
+
+            delete: function(id) {
+                console.log("delete item with id " + id);
+                var deferred = $q.defer();
+                return $http({
+                   method: "DELETE",
+                   url: 'http://clicker/public/items/' + id
+                }).then(function (data, status, headers, config) {
+                    deferred.resolve(data);
+                })
+                .catch(function(response){
+                    deferred.reject(response);
+                });
+                return deferred.promise; 
             }
         }
     }

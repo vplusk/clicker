@@ -1,10 +1,10 @@
 <input type="text" ng-model="itemText" name="text" ng-keypress="addItem($event)" placeholder="Enter item text and press Enter!">
 <br>
-
-<a href="" id="button" ng-click="ddSwitch = ddSwitch ? false:true">Button</a>
-<ul ng-show="ddSwitch">
+<a href="" id="button" class="aaa" ng-click="ddSwitch = ddSwitch ? false:true">Button</a>
+<ul  id="list">
 	<li ng-repeat="item in items">
 		<b>Item {{ item.id }} </b>
 		{{ item.text }}
+		<a href="" ng-click="deleteItem(item.id);" style="color:#FFF;">x</a>
 	</li>
 </ul>
